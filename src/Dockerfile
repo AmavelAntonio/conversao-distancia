@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.15.0a2-trixie
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt

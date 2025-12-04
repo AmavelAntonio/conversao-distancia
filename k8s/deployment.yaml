@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: conversao-distancia
 spec:
-  replicas: 1
+  replicas: 6
   selector:
     matchLabels:
       app: conversao-distancia
@@ -28,3 +28,5 @@ spec:
   ports:
   - port: 80
     targetPort: 5000
+    nodePort: 30000
+  type: NodePort
